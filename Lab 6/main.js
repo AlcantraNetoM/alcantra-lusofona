@@ -1,4 +1,4 @@
-// Inicializar localStorage se não existir
+// Inicializar localStorage
 if (!localStorage.getItem('produtos-selecionados')) {
     localStorage.setItem('produtos-selecionados', JSON.stringify([]));
 }
@@ -14,7 +14,6 @@ document.addEventListener('DOMContentLoaded', () => {
 // Carregar produtos da loja
 function carregarProdutos(produtos) {
     const listaProdutos = document.getElementById('lista-produtos');
-
     produtos.forEach(produto => {
         const artigo = criarProduto(produto);
         listaProdutos.append(artigo);
