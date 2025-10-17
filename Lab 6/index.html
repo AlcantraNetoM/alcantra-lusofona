@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Online - Lab6</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Loja</h1>
+        <nav>
+            <ul>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#cesto">Cesto</a></li>
+                <li>Cesto: <span id="contador-cesto">0</span> itens</li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+        <!-- Produtos -->
+        <section id="produtos">
+            <h2>Produtos Disponíveis</h2>
+            <section id="lista-produtos" class="flex-container">
+                <!-- Produtos renderizados via JS -->
+            </section>
+        </section>
+
+        <!-- Cesto -->
+        <section id="cesto">
+            <h2>Meu Cesto</h2>
+            <section id="lista-cesto" class="flex-container">
+                <!-- Produtos adicionados ao Cesto -->
+            </section>
+            <p>Total a pagar: <span id="total-cesto">0.00</span> €</p>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2025 Minha Loja Online. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="produtos.js"></script>
+    <script src="main.js"></script>
+
+</body>
+</html>
